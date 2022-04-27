@@ -163,7 +163,7 @@ public class AITrack: MonoBehaviour
 
 	IEnumerator OnTriggerEnter(Collider collision)
 	{
-		if (collision.gameObject.tag == "AiCar_01")
+		if (collision.gameObject.tag == "AICar01")
 		{
 			this.GetComponent<BoxCollider>().enabled = false;
 			MarkTracker += 1;

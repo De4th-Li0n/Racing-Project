@@ -126,6 +126,7 @@
     <Compile Include="Assets\Other\Standard Assets\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\Other\Standard Assets\Utility\WaypointProgressTracker.cs" />
     <Compile Include="Assets\Scripts\AI\AITrack.cs" />
+    <Compile Include="Assets\Scripts\Car\CameraChange.cs" />
     <Compile Include="Assets\Scripts\Car\CarCamera.cs" />
     <Compile Include="Assets\Scripts\Level\CheckPointTriger.cs" />
     <Compile Include="Assets\Scripts\Level\Countdown.cs" />
