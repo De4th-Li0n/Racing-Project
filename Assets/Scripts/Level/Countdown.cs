@@ -13,6 +13,7 @@ public class Countdown : MonoBehaviour
 	public GameObject LapTimer;	
 	public GameObject CarUserControl;
 	public GameObject AICar01;
+	public AudioSource LevelMusic;
 
 	void Start()
 	{
@@ -45,7 +46,8 @@ public class Countdown : MonoBehaviour
 		CountDown.SetActive(false);
 		GoAudio.Play();
 		LapTimer.SetActive(true);
-
+		LevelMusic.Play();
+		
 		CarUserControl.GetComponent<CarUserControl>().enabled = true;
 		AICar01.GetComponent<CarAIControl>().enabled = true;
 	}
