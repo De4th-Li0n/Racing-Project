@@ -11,8 +11,7 @@ public class LapComplete : MonoBehaviour
 	public GameObject MinuteDisplay;
 	public GameObject SecondDisplay;
 	public GameObject MilliDisplay;
-
-	public GameObject LapTimeBox;
+	
 
 	void OnTriggerEnter()
 	{
