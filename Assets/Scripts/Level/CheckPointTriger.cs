@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class CheckPointTriger : MonoBehaviour
 {
-	public GameObject StartTrig;
-	public GameObject NextTrig;
-
-	void OnTriggerEnter()
-	{
-		StartTrig.SetActive(true);
-		NextTrig.SetActive(false);
-	}
+    public GameObject LapCompleteTrig;
+    public GameObject HalfLapTrig;
+    public void OnTriggerEnter()
+    {
+        LapCompleteTrig.SetActive(true);
+        HalfLapTrig.SetActive(false);
+    }
 }
