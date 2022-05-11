@@ -6,9 +6,12 @@ public class CheckPointTriger : MonoBehaviour
 {
     public GameObject LapCompleteTrig;
     public GameObject HalfLapTrig;
-    public void OnTriggerEnter()
+    public void OnTriggerEnter(Collider collision)
     {
-        LapCompleteTrig.SetActive(true);
-        HalfLapTrig.SetActive(false);
+        if (collision.gameObject.tag == "CarPlayer")
+        {
+            LapCompleteTrig.SetActive(true);
+            HalfLapTrig.SetActive(false);
+        }    
     }
 }

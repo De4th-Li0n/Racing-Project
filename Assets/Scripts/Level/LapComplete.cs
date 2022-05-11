@@ -16,11 +16,23 @@ public class LapComplete : MonoBehaviour
     public int LapsDone;
     public float RawTime;
 
-    void OnTriggerEnter()
-    {
-        LapsDone += 1;
+    public GameObject RaceFinish;
 
-        RawTime = PlayerPrefs.GetFloat("RawTime");
+    void Update() 
+    {
+        if(LapsDone == 2)
+        {
+            RaceFinish.SetActive(true);
+        }
+    }
+
+    void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.tag == "CarPlayer")
+		{
+            LapsDone += 1;
+
+            RawTime = PlayerPrefs.GetFloat("RawTime");
 
         if (LaptimeManager.RawTime <= RawTime)
         {
@@ -61,5 +73,6 @@ public class LapComplete : MonoBehaviour
         NextTrig.SetActive(true);
         LapCompleteTrig.SetActive(false);
 
+        }
     }
 }
