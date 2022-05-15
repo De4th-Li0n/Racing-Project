@@ -12,4 +12,10 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+    public void Track01 () {
+		SceneManager.LoadScene (1);
+	}
+    public void Track02 () {
+		SceneManager.LoadScene (2);
+	}
 }
