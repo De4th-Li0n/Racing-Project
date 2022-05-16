@@ -1196,6 +1196,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115297712}
   m_CullTransparentMesh: 0
+--- !u!1 &123957019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 123957021}
+  - component: {fileID: 123957020}
+  m_Layer: 0
+  m_Name: CarChoice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &123957020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123957019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc54b8871c494e746a291abebbb108be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RedCar: {fileID: 711458094}
+  PaleCar: {fileID: 711458093}
+  YellowCar: {fileID: 711458092}
+  PinkCar: {fileID: 711458091}
+  CarImport: 0
+--- !u!4 &123957021
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123957019}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 486.17245, y: 142.10884, z: 381.88443}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &180764173
 GameObject:
   m_ObjectHideFlags: 0
@@ -3853,6 +3901,30 @@ PrefabInstance:
 --- !u!54 &711458090 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 5400000, guid: 0e7ee4df08df88c4880f43398f9ad2c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 711458089}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &711458091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2676320477060936505, guid: 0e7ee4df08df88c4880f43398f9ad2c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 711458089}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &711458092 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5266789530012634552, guid: 0e7ee4df08df88c4880f43398f9ad2c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 711458089}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &711458093 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7333094059426328366, guid: 0e7ee4df08df88c4880f43398f9ad2c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 711458089}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &711458094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2566003255845039000, guid: 0e7ee4df08df88c4880f43398f9ad2c2,
     type: 3}
   m_PrefabInstance: {fileID: 711458089}
   m_PrefabAsset: {fileID: 0}

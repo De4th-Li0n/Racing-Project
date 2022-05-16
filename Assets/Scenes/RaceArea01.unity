@@ -9038,6 +9038,30 @@ Rigidbody:
     type: 3}
   m_PrefabInstance: {fileID: 711458089}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &711458091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2676320477060936505, guid: 0e7ee4df08df88c4880f43398f9ad2c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 711458089}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &711458092 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5266789530012634552, guid: 0e7ee4df08df88c4880f43398f9ad2c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 711458089}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &711458093 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7333094059426328366, guid: 0e7ee4df08df88c4880f43398f9ad2c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 711458089}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &711458094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2566003255845039000, guid: 0e7ee4df08df88c4880f43398f9ad2c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 711458089}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &718721704
 GameObject:
   m_ObjectHideFlags: 0
@@ -19378,6 +19402,54 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000002, y: 1, z: 1.0000002}
   m_Center: {x: -0.00000023841858, y: -0.000000029802322, z: 0}
+--- !u!1 &1913837513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1913837515}
+  - component: {fileID: 1913837514}
+  m_Layer: 0
+  m_Name: CarChoice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1913837514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913837513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc54b8871c494e746a291abebbb108be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RedCar: {fileID: 711458094}
+  PaleCar: {fileID: 711458093}
+  YellowCar: {fileID: 711458092}
+  PinkCar: {fileID: 711458091}
+  CarImport: 0
+--- !u!4 &1913837515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913837513}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 486.17245, y: 142.10884, z: 381.88443}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1950389667
 GameObject:
   m_ObjectHideFlags: 0
