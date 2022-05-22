@@ -13,17 +13,23 @@ public class RaceFinish : MonoBehaviour
 	public AudioSource FinishMusic;
 
 	void OnTriggerEnter () {
-		this.GetComponent<BoxCollider> ().enabled = false;
-		MyCar.SetActive (false);
-		CompleteTrig.SetActive (false);
-		CarController.m_Topspeed = 0.0f;
-		MyCar.GetComponent<CarController> ().enabled = false;
-		MyCar.GetComponent<CarUserControl> ().enabled = false;
-        MyCar.GetComponent<CarAudio> ().enabled = false;
-		MyCar.SetActive (true);
-		FinishCam.SetActive (true);
-		LevelMusic.SetActive (false);
-		ViewModes.SetActive (false);
-		FinishMusic.Play ();
+		if(ModeTime.isTimeMode == true){
+			//Race Time Mode
+		}
+		else{
+			this.GetComponent<BoxCollider> ().enabled = false;
+			MyCar.SetActive (false);
+			CompleteTrig.SetActive (false);
+			CarController.m_Topspeed = 0.0f;
+			MyCar.GetComponent<CarController> ().enabled = false;
+			MyCar.GetComponent<CarUserControl> ().enabled = false;
+        	MyCar.GetComponent<CarAudio> ().enabled = false;
+			MyCar.SetActive (true);
+			FinishCam.SetActive (true);
+			LevelMusic.SetActive (false);
+			ViewModes.SetActive (false);
+			FinishMusic.Play ();
+		}
+		
 	}
 }
