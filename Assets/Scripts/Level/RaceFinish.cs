@@ -29,6 +29,8 @@ public class RaceFinish : MonoBehaviour
 			LevelMusic.SetActive (false);
 			ViewModes.SetActive (false);
 			FinishMusic.Play ();
+			GlobalCash.TotalCash += 100;
+			PlayerPrefs.SetInt("Saved Cash", GlobalCash.TotalCash);
 		}
 		
 	}
